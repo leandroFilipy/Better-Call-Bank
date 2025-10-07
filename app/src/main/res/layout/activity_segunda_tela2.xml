@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SegundaTela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFFFF"
+    android:visibility="visible"
+    tools:context=".SegundaTelaActivity2">
+
+    <!-- Logo -->
+
+    <!-- Boas-vindas e trocar conta -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="101dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="308dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/boasVindasLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView1">
+
+    </LinearLayout>
+
+    <!-- Instrução -->
+
+    <!-- Campos da senha -->
+
+    <TextView
+        android:id="@+id/instrucaoSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Insira sua senha"
+        android:textColor="#888888"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/olaUsuario" />
+
+    <LinearLayout
+        android:id="@+id/senhaLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/instrucaoSenha">
+
+    </LinearLayout>
+
+    <!-- Esqueci minha senha -->
+
+    <!-- Botão Continuar -->
+
+    <TextView
+        android:id="@+id/esqueciSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Esqueci minha senha"
+        android:textColor="#0079C1"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/digit4" />
+
+    <TextView
+        android:id="@+id/olaUsuario"
+        android:layout_width="167dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Olá, Usuário"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/trocarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/trocar_conta"
+        android:textColor="#0079C1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/olaUsuario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/digit6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/digit5"
+        app:layout_constraintTop_toBottomOf="@+id/instrucaoSenha" />
+
+    <EditText
+        android:id="@+id/digit1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instrucaoSenha" />
+
+    <EditText
+        android:id="@+id/digit3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/digit2"
+        app:layout_constraintTop_toBottomOf="@+id/instrucaoSenha" />
+
+    <EditText
+        android:id="@+id/digit4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/digit3"
+        app:layout_constraintTop_toBottomOf="@+id/instrucaoSenha" />
+
+    <EditText
+        android:id="@+id/digit5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/digit4"
+        app:layout_constraintTop_toBottomOf="@+id/instrucaoSenha" />
+
+    <EditText
+        android:id="@+id/digit2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/digit1"
+        app:layout_constraintTop_toBottomOf="@+id/instrucaoSenha" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="370dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="345dp"
+        android:backgroundTint="#1D72D5"
+        android:text="Continuar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/esqueciSenha" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="378dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/olaUsuario" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Versão 1.0.0"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="29dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_8593" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

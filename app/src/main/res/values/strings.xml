@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SistemaBancario</string>
+    <string name="ol_eliziane">Olá, Eliziane</string>
+    <string name="trocar_conta">Trocar conta</string>
+</resources>
