@@ -1,9 +1,11 @@
 package com.example.sistemabancario;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.KeyEvent;
+import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,6 +37,19 @@ public class SegundaTelaActivity2 extends AppCompatActivity {
         setupBackspace(digit4, digit3);
         setupBackspace(digit3, digit2);
         setupBackspace(digit2, digit1);
+
+        Button button = findViewById(R.id.button);
+
+        button.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                //abre a telaHome
+                Intent intent = new Intent(SegundaTelaActivity2.this, TelaHome.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void addAutoMove(EditText current, EditText next) {
@@ -68,4 +83,7 @@ public class SegundaTelaActivity2 extends AppCompatActivity {
             }
         });
     }
+
+
+
 }
